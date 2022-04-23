@@ -77,6 +77,18 @@ fn main() -> Result<()> {
         log.finish("Go", &codegen_info);
     }
 
+    if let Some(out_dir) = matches.value_of("graphql-out") {
+        log.start("GraphQL", out_dir);
+
+        let target = jtd_codegen_target_graphql::Target::new();
+
+        let codegen_info =
+            jtd_codegen::codegen(&target, root_name.clone(), &schema, &Path::new(out_dir))
+                .with_context(|| "Failed to generate GraphQL code")?;
+
+        log.finish("GraphQL", &codegen_info);
+    }
+
     if let Some(out_dir) = matches.value_of("java-jackson-out") {
         log.start("Java + Jackson", out_dir);
 

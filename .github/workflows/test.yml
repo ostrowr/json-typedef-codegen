@@ -7,6 +7,7 @@ jobs:
           - jtd_codegen_cli
           - jtd_codegen_target_csharp_system_text
           - jtd_codegen_target_go
+          - jtd_codegen_target_graphql
           - jtd_codegen_target_java_jackson
           - jtd_codegen_target_python
           - jtd_codegen_target_ruby

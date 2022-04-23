@@ -1,0 +1,14 @@
+true
+false
+null
+on
+schema
+type
+interface
+union
+input
+enum
+scalar
+directive
+implements
+repeatable

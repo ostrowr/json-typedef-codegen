@@ -12,6 +12,7 @@ path = "src/main.rs"
 jtd-codegen = { path = "../core" }
 jtd_codegen_target_csharp_system_text = { path = "../target_csharp_system_text" }
 jtd_codegen_target_go = { path = "../target_go" }
+jtd_codegen_target_graphql = { path = "../target_graphql" }
 jtd_codegen_target_java_jackson = { path = "../target_java_jackson" }
 jtd_codegen_target_python = { path = "../target_python" }
 jtd_codegen_target_ruby = { path = "../target_ruby" }
